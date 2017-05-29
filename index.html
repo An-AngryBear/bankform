@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Form</title>
+</head>
+	<body>
+		<style type="text/css">h1 {text-align:center;}</style>
+		<h1>Application J450-N</h1>
+		<form>
+			<h3>Applicant Information</h3>
+			<div id="applicantinfo">
+				<input type="text" placeholder="First name...">
+				<input type="text" placeholder="Mid. Initial...">
+				<input type="text" placeholder="Last name..."><br>
+				<input type="text" placeholder="Address...">
+				<input type="text" placeholder="Address Line 2...">
+				<input type="text" placeholder="Occupation..."><br>
+				<input type="text" placeholder="Employer...">
+				<input type="text" placeholder="Employer Address...">
+				<input type="text" placeholder="Emp. Address Line 2...">
+			</div>	
+			<h3>Loan Information</h3>
+			<div id="type-of-loan">
+				<input type="radio" name="typeofloan" value="Commercial">Commercial
+				<input type="radio" name="typeofloan" value="Real.Estate">Real Estate
+				<input type="radio" name="typeofloan" value="Personal">Personal
+				<input type="radio" name="typeofloan" value="Mortgage">Mortgage
+			</div>
+			<br>
+
+			Requested Loan Amount: <input type="text">
+			
+			<div id="lone-length">
+				<br>Loan Length:<input type="radio" name="lonelength" value="5">5 years
+				<input type="radio" name="lonelength" value="15">15 years
+				<input type="radio" name="lonelength" value="30">30 years
+			</div>
+			<div id="special-conditions">
+				<h3>Special Conditions</h3>
+				<input type="checkbox" name="specialconditions" value="Down.payment">I have a down payment<br>
+				<input type="checkbox" name="specialconditions" value="Out-of-State">I am out-of-state<br>
+				<input type="checkbox" name="specialconditions" value="Married">I am married<br>
+				<input type="checkbox" name="specialconditions" value="Co-signer">I have a co-signer<br><br>
+			</div>
+			<textarea rows="5" cols="20" placeholder="Additional comments..."></textarea>
+			<div id="contactinfo">
+				<h3>Contact Information</h3>
+				<input type="email" name="email" placeholder="E-mail Address...">
+				<input type="text" name="phone" placeholder="Phone Number...">
+				<input type="url" name="linkedinacct" placeholder="LinkedIn URL">
+			</div>
+			<br>
+			<button>Submit</button>
+
+		</form>
+	</body>
+</html>
